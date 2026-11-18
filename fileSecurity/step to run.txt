@@ -1,0 +1,107 @@
+Why Two Terminals?
+Terminal 1 acts as the SOC / Security Defender: It runs the monitorcontinuously in the background, watching the folder like a CCTV camera.
+Terminal 2 (or File Explorer / Notepad) acts as the Attacker: It modifies, adds, or deletes files.
+The moment the attacker touches a file in Terminal 2, Terminal 1 fires an instant alert.
+
+
+Step-by-Step Instructions
+Step 1: Open Your First command Terminal & Setup Test Folder
+
+Open a command window (Terminal 1) and navigate to your project directory:
+
+
+commmand
+
+cd d:\CyberSecurity_Projects\fileSecurity
+
+Create a sample folder with test files to simulate a protected system directory:
+
+command
+mkdir demo_folder
+Set-Content demo_folder\config.txt "allow_admin=false"
+Set-Content demo_folder\secret.txt "company secret confidential"
+Step 2: Create the Baseline Snapshot (Before Starting Monitor)
+
+Before the monitor can detect changes, it needs a trusted "clean state" snapshot:
+
+command
+py file_integrity_monitor.py init demo_folder
+
+What you will see:
+
+text
+2026-11-12 21:06:00 [INFO] Baseline created: fim_baseline.json (2 files indexed, SHA256)
+
+(This creates fim_baseline.json containing SHA-256 hashes of config.txt and secret.txt)
+
+Step 3: Start Live Monitoring in Terminal 1
+
+Now start the continuous monitor with a fast polling interval (e.g., -i 2 checks every 2 seconds):
+
+command
+py file_integrity_monitor.py monitor -i 2
+
+What you will see:
+
+text
+2026-11-12 21:06:05 [INFO] Starting File Integrity Monitor on D:\CyberSecurity_Projects\fileSecurity\demo_folder (interval: 2.0s). Press Ctrl+C to stop.
+2026-11-12 21:06:05 [INFO] Integrity check PASSED: no tampering detected.
+
+Terminal 1 is now actively guarding the folder. Leave this window open side-by-side on your screen.
+
+Step 4: Open Terminal 2 (Simulate the Attacker)
+
+Open a second command window (or split terminal in VS Code / Windows Terminal) and navigate to the same directory:
+
+
+command
+cd d:\CyberSecurity_Projects\fileSecurity
+
+Now perform 3 simulated attacks one by one, watching Terminal 1 after each command:
+
+Attack Test 1: Tamper with a file's content
+command
+Set-Content demo_folder\config.txt "allow_admin=true"
+
+👀 Look at Terminal 1: Within 2 seconds, an alert pops up:
+
+text
+[WARNING] [TAMPERED / MODIFIED] config.txt | size: 19 -> 18 | hash: 7233b56d8554... -> 03da526501b0...
+Attack Test 2: Plant an unauthorized file (e.g. malware or webshell)
+command
+Set-Content demo_folder\backdoor.py "import socket; print('reverse shell')"
+
+👀 Look at Terminal 1:
+
+text
+[WARNING] [ADDED / UNAUTHORIZED] backdoor.py
+Attack Test 3: Delete an important file
+command
+Remove-Item demo_folder\secret.txt
+
+👀 Look at Terminal 1:
+
+text
+[WARNING] [DELETED / MISSING] secret.txt
+Step 5: Show the Generated Audit Log File
+
+Open fim_alerts.log (in your editor or with Notepad / Get-Content in Terminal 2):
+
+command
+Get-Content fim_alerts.log
+
+What to explain to your evaluator:
+
+"Even if the attacker deletes their terminal session or closes the window, all tampering incidents are timestamped and permanently recorded in fim_alerts.log with the exact hash difference for digital forensics."
+
+Step 6: Stop Monitoring and Clean Up
+Click in Terminal 1 and press Ctrl + C. You will see:
+
+
+
+text
+[INFO] Monitoring stopped by user.
+When finished with your demo, run this cleanup command in Terminal 2:
+command
+Remove-Item -Recurse -Force demo_folder
+Remove-Item fim_baseline.json, fim_alerts.log -ErrorAction SilentlyContinue

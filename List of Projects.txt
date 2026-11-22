@@ -1,0 +1,537 @@
+Top 25 important Python cybersecurity scripts
+Level 1 – Python and security fundamentals
+Start here
+No.
+
+Python script
+
+Cybersecurity concept
+
+1
+
+Secure Password Generator
+
+Password security
+
+2
+
+Password Strength Analyzer
+
+Password policies
+
+3
+
+SHA-256 Hash Generator
+
+Cryptographic hashing
+
+4
+
+File Integrity Monitor
+
+File tampering detection
+
+5
+
+File Encryption & Decryption
+
+Data confidentiality
+
+Level 2 – Networking and reconnaissance
+Core networking
+No.
+
+Python script
+
+Cybersecurity concept
+
+6
+
+IP Address Analyzer
+
+IPv4, IPv6, subnetting
+
+7 not done
+
+DNS Lookup Tool
+
+Domain name resolution
+
+8
+
+HTTP Header Analyzer
+
+HTTP security
+
+9 not done
+
+SSL/TLS Certificate Checker
+
+HTTPS and certificates
+
+10 not done
+
+Network Device Inventory
+
+Network discovery
+
+Level 3 – Ethical hacking fundamentals
+Practical security
+No.
+
+Python script
+
+Cybersecurity concept
+
+11
+
+Authorized Port Scanner
+
+Network ports and services
+
+12
+
+Website Security Header Checker
+
+Web security configuration
+
+13
+
+Cookie Security Analyzer
+
+Secure cookies
+
+14
+
+URL Security Analyzer
+
+Suspicious URL detection
+
+15
+
+Web Server Information Checker
+
+Server configuration
+
+Level 4 – Defensive cybersecurity
+Threat detection
+No.
+
+Python script
+
+Cybersecurity concept
+
+16
+
+Log File Analyzer
+
+Security monitoring
+
+17
+
+Failed Login Detector
+
+Authentication attacks
+
+18
+
+Phishing Email Detector
+
+Email security
+
+19
+
+Suspicious File Detector
+
+Malware indicators
+
+20
+
+Windows Firewall Auditor
+
+Endpoint protection
+
+Level 5 – Advanced beginner projects
+Portfolio projects
+No.
+
+Python script
+
+Cybersecurity concept
+
+21
+
+Password Policy Auditor
+
+Identity security
+
+22
+
+System Security Auditor
+
+Security configuration
+
+23
+
+Malware Hash Checker
+
+Threat intelligence
+
+24
+
+Backup Integrity Checker
+
+Disaster recovery
+
+25
+
+Mini SOC Dashboard
+
+Security operations
+
+
+Your Python Cybersecurity Lab – 50 Scripts
+Level 1: Python fundamentals for cybersecurity
+Beginner
+These scripts teach you Python basics through security-related examples.
+
+No.
+
+Script
+
+What you'll learn
+
+1
+
+Password Strength Checker
+
+Evaluate password strength
+
+2
+
+Random Password Generator
+
+Generate secure random passwords
+
+3
+
+Password Hash Generator
+
+Understand SHA-256 hashing
+
+4
+
+Hash Verification Tool
+
+Verify file hashes
+
+5
+
+File Integrity Checker
+
+Detect file modifications
+
+6
+
+File Extension Analyzer
+
+Identify file types
+
+7
+
+Duplicate File Finder
+
+Find duplicate files
+
+8
+
+Secure Notes Tool
+
+Store notes with encryption
+
+9
+
+Caesar Cipher
+
+Learn basic cryptography
+
+10
+
+Base64 Encoder/Decoder
+
+Understand data encoding
+
+Level 2: Network security basics
+Beginner to intermediate
+No.
+
+Script
+
+What you'll learn
+
+11
+
+IP Address Information
+
+Understand IP addresses
+
+12
+
+DNS Lookup Tool
+
+Resolve domain names
+
+13
+
+Reverse DNS Lookup
+
+Understand reverse DNS
+
+14
+
+Website Connectivity Checker
+
+Check connectivity
+
+15
+
+Local IP Finder
+
+Find your local IP
+
+16
+
+Network Interface Viewer
+
+Inspect network interfaces
+
+17
+
+HTTP Header Viewer
+
+Understand HTTP headers
+
+18
+
+SSL Certificate Checker
+
+Inspect certificate information
+
+19
+
+URL Analyzer
+
+Examine URL components
+
+20
+
+Network Latency Checker
+
+Measure response time
+
+Level 3: System security
+Intermediate
+No.
+
+Script
+
+What you'll learn
+
+21
+
+Running Process Viewer
+
+Inspect running processes
+
+22
+
+System Information Collector
+
+Understand system information
+
+23
+
+File Permission Checker
+
+Inspect file permissions
+
+24
+
+Large File Finder
+
+Identify large files
+
+25
+
+Suspicious File Extension Detector
+
+Flag unusual extensions
+
+26
+
+Login Activity Analyzer
+
+Understand login records
+
+27
+
+Windows Firewall Status Checker
+
+Inspect firewall status
+
+28
+
+Startup Program Viewer
+
+Inspect startup applications
+
+29
+
+Disk Space Monitor
+
+Monitor disk usage
+
+30
+
+Security Log Analyzer
+
+Understand security logs
+
+Level 4: Defensive security and threat detection
+Intermediate
+No.
+
+Script
+
+What you'll learn
+
+31
+
+Phishing Email Analyzer
+
+Identify suspicious email indicators
+
+32
+
+Suspicious URL Detector
+
+Flag potentially dangerous URLs
+
+33
+
+Email Header Analyzer
+
+Understand email routing
+
+34
+
+Malware Hash Checker
+
+Compare files against known hash lists
+
+35
+
+File Change Monitor
+
+Monitor changes in important folders
+
+36
+
+USB Device Inventory
+
+View connected devices
+
+37
+
+Windows Defender Status Viewer
+
+Check antivirus status
+
+38
+
+Failed Login Counter
+
+Analyze failed login events
+
+39
+
+Log File Keyword Analyzer
+
+Find suspicious log entries
+
+40
+
+Security Report Generator
+
+Generate security summaries
+
+Level 5: Ethical hacking and security projects
+Advanced beginner
+All exercises will use your own computer, sample files, or authorized practice environments.
+
+No.
+
+Script
+
+What you'll learn
+
+41
+
+Security Header Auditor
+
+Review website security headers
+
+42
+
+Cookie Security Analyzer
+
+Inspect cookie security attributes
+
+43
+
+robots.txt Viewer
+
+Understand website indexing rules
+
+44
+
+Website TLS Configuration Viewer
+
+Examine HTTPS configuration
+
+45
+
+Local Security Configuration Auditor
+
+Review your own system settings
+
+46
+
+Password Policy Auditor
+
+Review password policy settings
+
+47
+
+File Metadata Inspector
+
+Examine file metadata
+
+48
+
+Secure File Encryption Tool
+
+Encrypt and decrypt your files
+
+49
+
+Backup Integrity Verifier
+
+Verify backup file integrity
+
+50
+
+Mini Cybersecurity Dashboard
+
+Combine defensive checks into one project
+

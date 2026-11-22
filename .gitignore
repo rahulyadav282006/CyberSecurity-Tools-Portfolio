@@ -4,3 +4,8 @@ __pycache__/
 venv/
 *.log
 
+# Secure Notes Tool - Ignore personal vault data & configs
+Secure_Notes_Tool/vault_notes/*.enc
+Secure_Notes_Tool/vault_backups/
+Secure_Notes_Tool/vault_config.json
+Secure_Notes_Tool/vault_manifest.json

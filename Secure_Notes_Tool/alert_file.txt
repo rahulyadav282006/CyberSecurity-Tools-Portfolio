@@ -1,0 +1,4 @@
+# ====================================================================
+# SECURE NOTES TOOL - FORENSIC INCIDENT AUDIT LOG (alert_file.txt)
+# Cryptographic Tamper Events & Anti-Ransomware Incidents Recorded Below
+# ====================================================================
